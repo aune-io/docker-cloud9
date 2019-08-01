@@ -25,4 +25,7 @@ RUN mkdir /workspace
 
 # Expose Port and execute IDE
 EXPOSE 8181
-CMD ["node", "/c9/server.js", "-w", "/workspace", "-a"]
+
+ENV C9_USER
+ENV C9_PASS
+CMD node /c9/server.js -w /workspace -a $C9_USER:$C9_PASS
