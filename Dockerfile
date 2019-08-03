@@ -26,4 +26,4 @@ RUN mkdir /workspace
 # Expose Port and execute IDE
 EXPOSE 8181
 
-CMD node /c9/server.js -w /workspace -a :
+CMD node /c9/server.js --listen 0.0.0.0 -w /workspace -a :
