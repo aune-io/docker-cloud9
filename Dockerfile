@@ -8,7 +8,7 @@ RUN apt-get -y dist-upgrade ; \
     apt-get clean
 
 # Install dependencies and utilities
-RUN apt-get -y install git curl nodejs npm htop ; \
+RUN apt-get -y install sudo nano htop curl git nodejs npm ; \
     apt-get autoclean ; \
     apt-get clean
 
