@@ -5,7 +5,7 @@ RUN apt-get update ; \
     apt-get -y install mysql-client redis ; \
     apt-get -y install software-properties-common ; \
     add-apt-repository ppa:ondrej/php ; \
-    DEBIAN_FRONTEND=noninteractive apt-get -y install php7.1 php7.1-mysql php7.1-mbstring php7.1-curl php7.1-xml php7.1-mcrypt php7.1-bcmath php7.1-gd php7.1-intl php7.1-soap php7.1-zip php7.1-cli libapache2-mod-php7.1 ; \
+    DEBIAN_FRONTEND=noninteractive apt-get -y install php5.6 php5.6-mysql php5.6-mbstring php5.6-curl php5.6-xml php5.6-mcrypt php5.6-bcmath php5.6-gd php5.6-intl php5.6-soap php5.6-zip php5.6-cli libapache2-mod-php5.6 ; \
     apt-get autoclean ; \
     apt-get clean
 
